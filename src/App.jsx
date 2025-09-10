@@ -1,16 +1,26 @@
 import './App.css'
+import Footer from './sections/Footer'
 import Header from './sections/Header'
 import HeroSection from './sections/HeroSection'
 import HeroSectionTwo from './sections/HeroSectionTwo'
+import ProjectExperience from './sections/ProjectExperience'
 
 function App() {
   return (
-    <div className='bg-gray-900  overflow-x-clip antialiased'>
-      <Header/>
-      {/* Hero section */}
-      <HeroSection/>
-      {/* hero section 2 */}
-      <HeroSectionTwo/>
+    <div>
+
+    
+    <div className=" bg-cover bg-center min-h-screen bg-gray-900">
+      <Header />
+      <HeroSection />
+    </div>
+    {/* offer */}
+
+    <HeroSectionTwo/>
+    {/* project Experience */}
+    <ProjectExperience/>
+    {/* Footer */}
+    <Footer/>
     </div>
   )
 }

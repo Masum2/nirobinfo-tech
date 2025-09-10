@@ -2,40 +2,31 @@ import React from "react";
 
 const HeroSectionTwo = () => {
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-[90vh] text-center text-white px-6 overflow-hidden bg-gradient-to-b from-[#050d27] via-[#081229] to-[#0a0f1e]">
-      
-      {/* Background polygon (right side) */}
-      <div className="absolute right-5 md:right-20 bottom-10 md:bottom-20 opacity-40 animate-pulse">
-        <img
-          src="/images/banner2.png"
-          alt="Polygon wireframe"
-          className="w-32 md:w-52 lg:w-64"
-        />
+    <section className="mt-10 px-6 pb-10 ">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center border-b border-[#000] pb-12">
+        
+        {/* Left Side (Text + Button) */}
+        <div className="space-y-6 text-center md:text-left">
+          <h1 className="text-3xl md:text-4xl font-bold leading-snug">
+            Unforgettable Websites, Brands & Visuals for Bold Visionaries.
+          </h1>
+          <p className="text-[#393B51] leading-relaxed">
+          At Nirob InfoTech LTD, we blend strategy, creativity, and technology to craft powerful brands, design impactful websites, and deliver seamless digital experiences that drive growth..
+          </p>
+          <button className="px-6 py-3 bg-[#38B6FF] text-white rounded-full font-semibold hover:bg-[#ED8A12] transition">
+            Know More About
+          </button>
+        </div>
+
+        {/* Right Side (Image) */}
+        <div className="flex justify-center md:justify-end">
+          <img
+            src="https://images.pexels.com/photos/1181359/pexels-photo-1181359.jpeg"
+            alt="Hero Visual"
+            className="w-full max-w-md rounded-2xl shadow-lg"
+          />
+        </div>
       </div>
-
-      {/* Main image */}
-      <div className="mb-10 md:mb-12 animate-fadeDown drop-shadow-xl">
-        <img
-          src="/images/banner1.png"
-          alt="Tech illustration"
-          className="max-w-[90%] md:max-w-[700px] mx-auto"
-        />
-      </div>
-
-      {/* Quote text */}
-      <p className="max-w-5xl text-base md:text-lg lg:text-xl leading-relaxed text-gray-300 px-4">
-        "In today’s rapidly changing tech landscape, 
-        <span className="text-sky-400 font-semibold"> digital transformation </span>
-        is no longer optional — it’s essential. Emerging technologies like
-        <span className="text-sky-400 font-semibold"> AI</span>, 
-        <span className="text-sky-400 font-semibold"> cloud computing</span>, 
-        and data-driven solutions are empowering businesses to grow smarter, faster, and more secure. 
-        At <span className="text-sky-400 font-semibold">Nirob InfoTech Ltd</span>, 
-        we help organizations harness these innovations to stay ahead in a competitive world."
-      </p>
-
-      {/* Underline separator */}
-      <div className="mt-8 w-24 md:w-40 h-[2px] bg-gradient-to-r from-sky-400 via-cyan-300 to-sky-400 rounded-full"></div>
     </section>
   );
 };
