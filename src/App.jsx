@@ -3,7 +3,9 @@ import Footer from './sections/Footer'
 import Header from './sections/Header'
 import HeroSection from './sections/HeroSection'
 import HeroSectionTwo from './sections/HeroSectionTwo'
+import OurProcess from './sections/OurProcess'
 import ProjectExperience from './sections/ProjectExperience'
+import ReviewSection from './sections/ReviewSection'
 import Services from './sections/Services'
 import ServicesAnimation from './sections/ServicesAnimation'
 
@@ -23,6 +25,8 @@ function App() {
       <HeroSectionTwo />
       {/* project Experience */}
       <ProjectExperience />
+      <OurProcess/>
+    <ReviewSection/>
       {/* Footer */}
       <Footer />
     </div>
