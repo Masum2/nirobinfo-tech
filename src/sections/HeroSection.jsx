@@ -71,36 +71,6 @@ const HeroSection = () => {
                 </div>
             </div>
 
-            {/* Logos */}
-            <div className="mb-6 animate-fadeDown mt-8 ">
-                <span className="bg-gray-800/40 text-[#FFF] text-sm px-4 py-2 rounded-lg mt-8 inline-flex items-center gap-2 border border-gray-700 rounded-2xl">
-                    <span>👋</span> Out Companies
-                </span>
-            </div>
-            <div className="flex flex-wrap justify-center items-center gap-8  px-6">
-                {[
-                    { img: "/images/logo2.png", name: "Nirob Trading Corporation", tagline: "(Powering Progress Through Trusted Trade)" },
-                    { img: "/images/logo3.png", name: "Kumkum Construction", tagline: "(we commited to raising the standard of Construction)" },
-                    { img: "/images/logo1.png", name: "Nirob InfoTech LTD", tagline: "(Empowering the Tech Flow)" },
-                    { img: "/images/logo4.png", name: "Nirob Agro Care LTD", tagline: "(Where green possibilities are created &  quality moves the world)" },
-                ].map((item, index) => (
-                    <div
-                        key={index}
-                        className="bg-gray-800/40 backdrop-blur-md border border-gray-700 rounded-2xl shadow-lg p-6 w-64 flex flex-col items-center text-center transition-transform hover:scale-105 hover:shadow-xl"
-                    >
-                        {/* Logo */}
-                        <img
-                            src={item.img}
-                            alt={item.name}
-                            className="w-20 h-20 object-contain mb-4"
-                        />
-                        {/* Company Name */}
-                        <p className="text-[15px] font-semibold text-white">{item.name}</p>
-                        {/* Tagline */}
-                        <p className="text-[10px] text-gray-300 mt-2 italic">{item.tagline}</p>
-                    </div>
-                ))}
-            </div>
 
         </section>
     );

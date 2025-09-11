@@ -87,7 +87,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="bg-gray-900 text-white px-6 py-12">
+    <section className="bg-gray-900 text-white  py-12">
       {/* Heading */}
       <div className="text-center mb-12">
         <span className="bg-gray-800/40 text-[#FFF] text-2xl px-4 py-2 rounded-2xl inline-flex items-center gap-2 border border-gray-700">
@@ -108,6 +108,8 @@ const Services = () => {
           </div>
         ))}
       </div>
+      
+        
     </section>
   );
 };
