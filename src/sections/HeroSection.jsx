@@ -35,9 +35,9 @@ const HeroSection = () => {
 
     return (
         <section className="text-center mt-20 px-6 pb-[20px]">
-            <p className="text-[#12A0E2] font-medium uppercase tracking-widest">
+            {/* <p className="text-[#12A0E2] font-medium uppercase tracking-widest">
                 Top 100 Design Studios in USA
-            </p>
+            </p> */}
             <h1 className="text-4xl md:text-6xl font-bold text-white mt-4 leading-tight">
                 Empowering the Tech Flow
             </h1>
@@ -80,9 +80,9 @@ const HeroSection = () => {
             <div className="flex flex-wrap justify-center items-center gap-8  px-6">
                 {[
                     { img: "/images/logo2.png", name: "Nirob Trading Corporation", tagline: "(Powering Progress Through Trusted Trade)" },
-                    { img: "/images/logo3.png", name: "Nirob Trading Corporation", tagline: "(Powering Progress Through Trusted Trade)" },
-                    { img: "/images/logo1.png", name: "Nirob Trading Corporation", tagline: "(Powering Progress Through Trusted Trade)" },
-                    { img: "/images/logo4.png", name: "Nirob Trading Corporation", tagline: "(Powering Progress Through Trusted Trade)" },
+                    { img: "/images/logo3.png", name: "Kumkum Construction", tagline: "(we commited to raising the standard of Construction)" },
+                    { img: "/images/logo1.png", name: "Nirob InfoTech LTD", tagline: "(Empowering the Tech Flow)" },
+                    { img: "/images/logo4.png", name: "Nirob Agro Care LTD", tagline: "(Where green possibilities are created &  quality moves the world)" },
                 ].map((item, index) => (
                     <div
                         key={index}

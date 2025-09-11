@@ -4,5 +4,8 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),tailwindcss(),],
-  base: process.env.VITE_BASE_PATH || "/nirobinfo-tech"
+  
+  //for live
+  // base: process.env.VITE_BASE_PATH || "/nirobinfo-tech/" 
+   base: process.env.VITE_BASE_PATH || "/" //for local
 })
