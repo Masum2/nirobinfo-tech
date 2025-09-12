@@ -1,4 +1,5 @@
 import './App.css'
+import AboutUs from './sections/AboutUs'
 import Footer from './sections/Footer'
 import Header from './sections/Header'
 import HeroSection from './sections/HeroSection'
@@ -14,18 +15,20 @@ function App() {
     <div>
 
 
-      <div className=" bg-cover bg-center min-h-screen bg-gray-900">
+      <div className=" bg-cover bg-center  bg-gray-900">
         <Header />
         <HeroSection />
       </div>
       {/* offer */}
-         
+            <AboutUs/>
       <Services />
+   
    <ServicesAnimation/>
+     <OurProcess/>
       <HeroSectionTwo />
       {/* project Experience */}
       <ProjectExperience />
-      <OurProcess/>
+    
     <ReviewSection/>
       {/* Footer */}
       <Footer />

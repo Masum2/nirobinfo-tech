@@ -1,93 +1,108 @@
 import React from "react";
+import {
+  FaLightbulb,
+  FaUsers,
+  FaDollarSign,
+  FaCogs,
+  FaClock,
+  FaCertificate,
+} from "react-icons/fa";
 
 const OurProcess = () => {
   const steps = [
     {
-      title: "Discover & Consult",
-      description:
-        "We listen first — understanding your vision, challenges, and goals to set the right foundation.",
-      icon: "🔍",
+      title: "Innovative Solutions",
+      description: "Creative and unique problem-solving techniques.",
+      icon: <FaLightbulb className="text-3xl text-cyan-600" />,
+      position: "top-[-10%] left-1/2 -translate-x-1/2", // top
     },
     {
-      title: "Customized Solution Design",
-      description:
-        "Our team builds tailored, scalable solutions powered by web development, AI/ML, and IoT to fit your unique needs.",
-      icon: "💡",
+      title: "Expert Employees",
+      description: "Highly skilled, knowledgeable, and experienced team members.",
+      icon: <FaUsers className="text-3xl text-cyan-600" />,
+      position: "top-1/3 right-0 translate-x-[70%] -translate-y-1/2", // right-top
     },
     {
-      title: "Agile Development & Testing",
-      description:
-        "Through agile methods, we design, test, and refine — ensuring your solution is efficient, reliable, and future-ready.",
-      icon: "⚙️",
+      title: "Cost Effective",
+      description: "Providing affordable solutions within client’s budget.",
+      icon: <FaDollarSign className="text-3xl text-cyan-600" />,
+      position: "bottom-1/3 right-0 translate-x-[70%] translate-y-1/2", // right-bottom
     },
     {
-      title: "Launch & Long-Term Support",
-      description:
-        "From a smooth launch to ongoing support, we’re with you every step — driving continuous growth and innovation.",
-      icon: "🚀",
+      title: "Quality Assurances",
+      description: "Strict and thorough quality control measures.",
+      icon: <FaCertificate className="text-3xl text-cyan-600" />,
+      position: "bottom-[-10%] left-1/2 -translate-x-1/2", // bottom
+    },
+    {
+      title: "On-time Delivery",
+      description: "Timely completion of projects, no delays.",
+      icon: <FaClock className="text-3xl text-cyan-600" />,
+      position: "bottom-1/3 left-0 -translate-x-[70%] translate-y-1/2", // left-bottom
+    },
+    {
+      title: "Cutting-Edge Technology",
+      description: "Use of the latest and most advanced technological tools.",
+      icon: <FaCogs className="text-3xl text-cyan-600" />,
+      position: "top-1/3 left-0 -translate-x-[70%] -translate-y-1/2", // left-top
     },
   ];
 
   return (
-    <section className="bg-gray-900 text-white py-16 px-6">
+    <section className="relative bg-gradient-to-b from-white to-cyan-50 text-gray-800 py-20 flex flex-col items-center">
       {/* Heading */}
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-cyan-400 mb-4">PROCESS</h2>
-        <p className="text-lg max-w-3xl mx-auto text-gray-300">
-          At <span className="text-orange-400 font-semibold">Nirob IT</span>, we
-          operate at the intersection of strategy, creativity, and technology to
-          help businesses digitally transform and stay ahead in a competitive
-          world.
+      <div className="text-center max-w-2xl mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Why Choose Us?
+        </h2>
+        <p className="text-gray-600 text-base md:text-lg">
+          At Nirob Info Tech, we combine innovation, expertise, and integrity 
+          to deliver powerful solutions tailored to your needs. From concept 
+          to execution, we ensure excellence, transparency, and long-term 
+          value for our clients.
         </p>
       </div>
 
-      {/* Process Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      {/* Circle Process */}
+      <div className="relative w-[680px] h-[680px]">
+        {/* Center Image */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0">
+          <div className="relative w-[420px] h-[420px]">
+            <img
+              src="/images/process.png"
+              alt="process-center"
+              className="w-full h-full object-contain"
+            />
+          </div>
+        </div>
+
+        {/* Outer Items */}
         {steps.map((step, index) => (
           <div
             key={index}
-            className="bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow"
+            className={`absolute ${step.position} w-60 text-center`}
           >
-            <div className="text-4xl mb-4">{step.icon}</div>
-            <h3 className="text-xl font-bold mb-3 text-white">{step.title}</h3>
-            <p className="text-gray-300 text-sm leading-relaxed">
-              {step.description}
-            </p>
+            <div className="flex flex-col items-center group bg-white/80 backdrop-blur-sm rounded-xl p-3 shadow-md">
+              <div className="relative w-20 h-20 transition-transform duration-300 group-hover:scale-110">
+                <img
+                  src="https://static.vecteezy.com/system/resources/thumbnails/036/443/372/small_2x/neon-light-frame-png.png"
+                  alt={`hex-${index}`}
+                  className="w-full h-full object-contain drop-shadow-lg"
+                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  {step.icon}
+                </div>
+              </div>
+              <h3 className="mt-3 font-semibold text-lg text-gray-800 group-hover:text-cyan-600 transition-colors">
+                {step.title}
+              </h3>
+              <p className="text-sm text-gray-600 mt-1 leading-snug">
+                {step.description}
+              </p>
+            </div>
           </div>
         ))}
       </div>
-          {/* Logos */}
-            <div className="mb-6 animate-fadeDown mt-8 flex justify-center align-items-center">
-                <span className="bg-gray-800/40 text-[#FFF] text-2xl px-4 py-2 rounded-lg mt-8 inline-flex items-center gap-2 border border-gray-700 rounded-2xl">
-                    <span>👋</span> Our Companies
-                </span>
-            </div>
-            <div className="flex flex-wrap justify-center items-center gap-8  px-6  bg-gray-800/40 backdrop-blur-md border border-gray-700">
-                {[
-                    { img: "/images/logo4.png", name: "Nirob Agro Care LTD", tagline: "(Where green possibilities are created &  quality moves the world)" },
-
-                    { img: "/images/logo3.png", name: "Kumkum Construction", tagline: "(we commited to raising the standard of Construction)" },
-                    { img: "/images/logo1.png", name: "Nirob InfoTech LTD", tagline: "(Empowering the Tech Flow)" },
-                                        { img: "/images/logo2.png", name: "Nirob Trading Corporation", tagline: "(Powering Progress Through Trusted Trade)" },
-
-                ].map((item, index) => (
-                    <div
-                        key={index}
-                        className="  rounded-2xl shadow-lg p-6 w-64 flex flex-col items-center text-center transition-transform hover:scale-105 hover:shadow-xl"
-                    >
-                        {/* Logo */}
-                        <img
-                            src={item.img}
-                            alt={item.name}
-                            className="w-20 h-20 object-contain mb-4"
-                        />
-                        {/* Company Name */}
-                        <p className="text-[15px] font-semibold text-white">{item.name}</p>
-                        {/* Tagline */}
-                        <p className="text-[10px] text-gray-300 mt-2 italic">{item.tagline}</p>
-                    </div>
-                ))}
-            </div>
     </section>
   );
 };

@@ -15,10 +15,10 @@ import {
   FaUsers,
 } from "react-icons/fa";
 import { MdDesignServices } from "react-icons/md";
+import { motion } from "framer-motion"; // 👉 framer-motion import
 
 const Services = () => {
   const services = [
-    // তোমার সার্ভিসগুলো
     {
       icon: <FaGlobe className="text-cyan-400 text-3xl" />,
       title: "Website Development & Services",
@@ -64,8 +64,6 @@ const Services = () => {
       title: "Digital Solutions & Branding",
       desc: "Creative digital solutions and branding strategies to boost presence.",
     },
-
-    // আমার আগের ইউনিক সার্ভিসগুলো
     {
       icon: <FaMobileAlt className="text-cyan-400 text-3xl" />,
       title: "Mobile App Development",
@@ -76,18 +74,15 @@ const Services = () => {
       title: "iOS App Development",
       desc: "Unmatched mobile solutions for iOS platforms for maximum engagement.",
     },
-
- 
     {
       icon: <MdDesignServices className="text-cyan-400 text-3xl" />,
       title: "UI/UX Design",
       desc: "Eye candy UI/UX design for smooth user experience & trust building.",
     },
-
   ];
 
   return (
-    <section className="bg-gray-900 text-white  py-12">
+    <section className="bg-gray-900 text-white py-12">
       {/* Heading */}
       <div className="text-center mb-12">
         <span className="bg-gray-800/40 text-[#FFF] text-2xl px-4 py-2 rounded-2xl inline-flex items-center gap-2 border border-gray-700">
@@ -98,18 +93,21 @@ const Services = () => {
       {/* Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {services.map((service, index) => (
-          <div
+          <motion.div
             key={index}
-            className="bg-gray-800/40 border border-gray-700 rounded-2xl p-6 text-center shadow-md hover:shadow-xl transition-transform hover:scale-105"
+            className="bg-gray-800/40 border border-gray-700 rounded-2xl p-6 text-center shadow-md"
+            initial={{ opacity: 0, y: 50 }} // শুরুর অবস্থা
+            whileInView={{ opacity: 1, y: 0 }} // স্ক্রল করলে effect
+            transition={{ duration: 0.6, delay: index * 0.1 }} // stagger effect
+            whileHover={{ scale: 1.05, boxShadow: "0px 0px 15px rgba(0, 255, 255, 0.5)" }} // hover animation
+            viewport={{ once: true }} // একবারই animation হবে
           >
             <div className="flex justify-center mb-4">{service.icon}</div>
             <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
             <p className="text-sm text-gray-300">{service.desc}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
-      
-        
     </section>
   );
 };

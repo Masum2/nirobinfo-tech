@@ -20,7 +20,7 @@ const Header = () => {
             <p className="text-gray-300 text-[5px] md:text-xs hidden md:flex flex-wrap">
               <span className="animate-pulse">✦</span>
               <span className="mx-1">Empowering</span>
-              <span className="text-cyan-400 font-medium mx-1">the</span>
+              <span className="text-blue-400 font-medium mx-1">the</span>
               <span>Tech</span>
               <span className="text-blue-400 font-medium mx-1">Flow</span>
               <span className="animate-pulse">✦</span>
