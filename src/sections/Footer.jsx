@@ -9,13 +9,14 @@ const Footer = () => {
         {/* Logo & About */}
         <div>
           <div className="flex items-center space-x-2">
-            <img src="/images/logo.png" alt="logo" className="w-12 h-12" />
+            <img src="/images/logo.png" alt="logo" className="w-14 h-14" />
             <h2 className="text-xl font-bold text-white">
               Nirob <span className="text-[#38B6FF]">InfoTech LTD</span>
             </h2>
           </div>
           <p className="mt-4 text-sm text-gray-400">
-            Empowering the Tech Flow ✦ Delivering creative solutions with modern design & technology.
+           
+            <span style={{fontWeight:'bold'}}>Empowering the Tech Flow ✦</span><br></br> Delivering creative solutions with modern design & technology.
           </p>
         </div>
 
