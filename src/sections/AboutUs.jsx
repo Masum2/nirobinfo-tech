@@ -13,44 +13,44 @@ const AboutUs = () => {
   const features = [
     {
       icon: <FaMedal className="text-blue-600 text-2xl" />,
-      title: "Qualified",
-      desc: "Experienced and skilled team",
+      title: "Client-Centered Approach",
+      desc: "We listen first, act second. Every solution is designed with your unique needs and long-termsuccess in mind.",
     },
     {
       icon: <FaUsersCog className="text-blue-600 text-2xl" />,
-      title: "Proficient",
-      desc: "Utilize modern methodologies and tools",
+      title: "End-to-End Support",
+      desc: "From the very first consultation to post-project assistance, we’re by your side at every stage of your digital journey"
     },
     {
       icon: <FaBrain className="text-blue-600 text-2xl" />,
-      title: "Expert",
-      desc: "Deep expertise in AI and blockchain",
+      title: "Excellence in Delivery",
+      desc: "We don’t settle for “good enough.” Our focus is on delivering high-quality, scalable, and reliable solutions every time",
     },
     {
       icon: <MdVerifiedUser className="text-blue-600 text-2xl" />,
-      title: "Transparent",
-      desc: "Clear communication and realistic expectations",
+      title: "Trust & Transparency",
+      desc: "Clear communication, honest guidance, and ethical practices are the foundation of every partnership we build",
     },
     {
       icon: <FaBalanceScale className="text-blue-600 text-2xl" />,
-      title: "Integrity",
-      desc: "Ethical and professional practices",
+      title: "Collaborative Growth",
+      desc: "We see ourselves as part of your team, working hand-in-hand to turn challenges into opportunities and ideas into success.",
     },
     {
       icon: <FaHandshake className="text-blue-600 text-2xl" />,
-      title: "Relationship",
-      desc: "Long-term partnerships & client success",
+      title: "Finishing with Confidence",
+      desc: "Every project is completed with precision, dedication, and care—ensuring lasting value for your business",
     },
-      {
-      icon: <FaHandshake className="text-blue-600 text-2xl" />,
-      title: "Relationship",
-      desc: "Long-term partnerships & client success",
-    },
-      {
-      icon: <FaHandshake className="text-blue-600 text-2xl" />,
-      title: "Relationship",
-      desc: "Long-term partnerships & client success",
-    },
+    //   {
+    //   icon: <FaHandshake className="text-blue-600 text-2xl" />,
+    //   title: "Relationship",
+    //   desc: "Long-term partnerships & client success",
+    // },
+    //   {
+    //   icon: <FaHandshake className="text-blue-600 text-2xl" />,
+    //   title: "Relationship",
+    //   desc: "Long-term partnerships & client success",
+    // },
   ];
 
   return (
@@ -68,7 +68,7 @@ unique needs and craft custom solutions that go beyond expectations..
       </div>
 
       {/* Features */}
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-8 px-16">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 px-16">
         {features.map((feature, index) => {
           // Border pattern logic
           const borderClass =

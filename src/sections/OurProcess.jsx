@@ -11,7 +11,7 @@ import {
 const OurProcess = () => {
   const steps = [
     {
-      title: "Innovative Solutions",
+      title: "Scalable & Secure Solutions",
       description: "Creative and unique problem-solving techniques.",
       icon: <FaLightbulb className="text-3xl text-cyan-600" />,
       position: "top-[-8%] left-1/2 -translate-x-1/2", // top
@@ -41,7 +41,7 @@ const OurProcess = () => {
       position: "bottom-1/3 left-0 -translate-x-[50%] translate-y-1/2", // left-bottom
     },
     {
-      title: "Cutting-Edge Technology",
+      title: "Expertise in Latest Technologies",
       description: "Use of the latest and most advanced technological tools.",
       icon: <FaCogs className="text-3xl text-cyan-600" />,
       position: "top-1/3 left-0 -translate-x-[50%] -translate-y-1/2", // left-top

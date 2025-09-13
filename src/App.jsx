@@ -1,5 +1,6 @@
 import './App.css'
 import AboutUs from './sections/AboutUs'
+import DevelopmentProcess from './sections/DevelopemntProcess'
 import Footer from './sections/Footer'
 import Header from './sections/Header'
 import HeroSection from './sections/HeroSection'
@@ -21,10 +22,11 @@ function App() {
       </div>
       {/* offer */}
             <AboutUs/>
+            <OurProcess/>
       <Services />
    
    <ServicesAnimation/>
-     <OurProcess/>
+     <DevelopmentProcess/>
       <HeroSectionTwo />
       {/* project Experience */}
       <ProjectExperience />
