@@ -12,7 +12,7 @@ const OurProcess = () => {
   const steps = [
     {
       title: "Scalable & Secure Solutions",
-      description: "Creative and unique problem-solving techniques.",
+      description: "Creative and unique problem-solving techniques",
       icon: <FaLightbulb className="text-3xl text-cyan-600" />,
       position: "top-[-8%] left-1/2 -translate-x-1/2", // top
     },
@@ -23,14 +23,14 @@ const OurProcess = () => {
       position: "top-1/3 right-0 translate-x-[50%] -translate-y-1/2", // right-top
     },
     {
-      title: "Cost Effective",
+      title: "Dedicated Client Support",
       description: "Providing affordable solutions within client’s budget.",
       icon: <FaDollarSign className="text-3xl text-cyan-600" />,
       position: "bottom-1/3 right-0 translate-x-[50%] translate-y-1/2", // right-bottom
     },
     {
-      title: "Quality Assurances",
-      description: "Strict and thorough quality control measures.",
+      title: "Proven Track Record of Success",
+      description: "Strict and thorough quality control measures..",
       icon: <FaCertificate className="text-3xl text-cyan-600" />,
       position: "bottom-[-8%] left-1/2 -translate-x-1/2", // bottom
     },
@@ -56,10 +56,9 @@ const OurProcess = () => {
           Why Choose Us?
         </h2>
         <p className="text-gray-600 text-sm md:text-lg">
-          At DeepChain Labs, we combine innovation, expertise, and integrity 
-          to deliver powerful solutions tailored to your needs. From concept 
-          to execution, we ensure excellence, transparency, and long-term 
-          value for our clients.
+         At Nirob InfoTech LTD, we see ourselves not just as a technology provider, but as a digital
+growth partner. By combining technology, creativity, and strategy, we design digital
+experiences that strengthen brands, enhance customer engagement, and fuel sustainable success.
         </p>
       </div>
 
