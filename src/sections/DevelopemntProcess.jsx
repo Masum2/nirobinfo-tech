@@ -12,13 +12,13 @@ import {
 const steps = [
   {
     icon: <FaLightbulb size={28} className="text-blue-500" />,
-    title: "Brainstorming",
-    description: "Generating ideas, defining requirements, planning",
+    title: "Discover & Consult",
+    description: "We listen first — shaping the right foundation.",
   },
   {
     icon: <FaPencilRuler size={28} className="text-blue-500" />,
-    title: "Designing",
-    description: "Creating visual concepts, PRD, wireframing, UI/UX",
+    title: "Customized Solution Design",
+    description: "Scalable solutions with Web, AI/ML & IoT",
   },
   {
     icon: <FaCode size={28} className="text-blue-500" />,
@@ -37,8 +37,8 @@ const steps = [
   },
   {
     icon: <FaTools size={28} className="text-blue-500" />,
-    title: "Maintenance",
-    description: "Product Release, beta testing, delivery",
+    title: "Launch & Long-Term Support",
+    description: "From launch to support — driving growth and innovation.",
   },
 ];
 
@@ -80,7 +80,7 @@ const DevelopmentProcess = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ scale: 1.05 }}
             >
-              <div className="w-60 h-60 relative flex items-center justify-center cursor-pointer">
+              <div className="w-72 h-72 relative flex items-center justify-center cursor-pointer">
                 <img
                   src="https://static.vecteezy.com/system/resources/thumbnails/036/443/372/small_2x/neon-light-frame-png.png"
                   alt="Step Shape"
@@ -88,9 +88,16 @@ const DevelopmentProcess = () => {
                 />
                 <div className="relative text-center px-4">
                   <div className="flex justify-center mb-3">{step.icon}</div>
-                  <h3 className="text-[16px] font-bold text-gray-800">
-                    {step.title}
-                  </h3>
+                <h3 className="text-[16px] font-bold text-gray-800">
+  {step.title.length > 18 ? (
+    <>
+      {step.title.slice(0, 18)} <br />
+      {step.title.slice(18)}
+    </>
+  ) : (
+    step.title
+  )}
+</h3>
                   <p className="text-[11px] text-gray-600 mt-2 break-words w-[24ch]">
                     {step.description}
                   </p>
