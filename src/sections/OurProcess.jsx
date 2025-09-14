@@ -56,9 +56,7 @@ const OurProcess = () => {
           Why Choose Us?
         </h2>
         <p className="text-gray-600 text-sm md:text-lg">
-         At Nirob InfoTech LTD, we see ourselves not just as a technology provider, but as a digital
-growth partner. By combining technology, creativity, and strategy, we design digital
-experiences that strengthen brands, enhance customer engagement, and fuel sustainable success.
+        “Your ambitions deserve more than promises. Nirob InfoTech LTD labs partners with you, bringing innovation, clarity, and passion to every step so your project creates enduring change.”
         </p>
       </div>
 

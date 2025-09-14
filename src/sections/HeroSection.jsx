@@ -45,8 +45,8 @@ const HeroSection = () => {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.3 }}
                 >
-                    <span className="text-[#0FCEE0]">Empowering</span> the{" "}
-                    <span className="text-[#0FCEE0]">Tech</span> Flow
+                    <span className="text-blue-400">Empowering</span> the{" "}
+                    <span className="text-blue-400">Tech</span> Flow
                 </motion.h1>
 
                 <motion.p
