@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex justify-between items-center px-4 md:px-8 py-4 bg-gray-800/40 border-b border-gray-700 relative">
+    <header className="flex justify-between items-center px-4 md:px-8 py-4 bg-gray-900 border-b border-gray-700 relative">
       {/* ---------- Desktop View ---------- */}
       <div className="hidden md:flex justify-between items-center w-full">
         {/* Logo + Name */}
@@ -30,12 +31,13 @@ const Header = () => {
 
         {/* Nav Links */}
         <nav className="flex space-x-6 text-white font-medium">
-          <a href="#" className="hover:text-[#ED8A12]">Home</a>
-          <a href="#" className="hover:text-[#ED8A12]">About Us</a>
-          <a href="#" className="hover:text-[#ED8A12]">Team</a>
-          <a href="#" className="hover:text-[#ED8A12]">Services</a>
-          <a href="#" className="hover:text-[#ED8A12]">Companies</a>
-          <a href="#" className="hover:text-[#ED8A12]">Contact</a>
+           <Link to="/" className="hover:text-[#ED8A12]" >Home</Link>
+          <Link to="/about" className="hover:text-[#ED8A12]">About Us</Link>
+           <Link to="/team" className="hover:text-[#ED8A12]">Team</Link>
+         <Link to="/services" className="hover:text-[#ED8A12]">Services</Link>
+            <Link to="/companies" className="hover:text-[#ED8A12]">Companies</Link>
+            <Link to="/contact" className="hover:text-[#ED8A12]">Contact</Link>
+        
         </nav>
 
         {/* Call to Action */}
@@ -73,12 +75,13 @@ const Header = () => {
           </button>
         </div>
         <nav className="flex flex-col mt-4 space-y-4 px-4">
-          <a href="#" className="hover:text-[#ED8A12]" onClick={toggleDrawer}>Home</a>
-          <a href="#" className="hover:text-[#ED8A12]" onClick={toggleDrawer}>About Us</a>
-          <a href="#" className="hover:text-[#ED8A12]" onClick={toggleDrawer}>Team</a>
-          <a href="#" className="hover:text-[#ED8A12]" onClick={toggleDrawer}>Services</a>
-          <a href="#" className="hover:text-[#ED8A12]" onClick={toggleDrawer}>Companies</a>
-          <a href="#" className="hover:text-[#ED8A12]" onClick={toggleDrawer}>Contact</a>
+       
+              <Link to="/" className="hover:text-[#ED8A12]" onClick={toggleDrawer}>Home</Link>
+          <Link to="/about" className="hover:text-[#ED8A12]" onClick={toggleDrawer}>About Us</Link>
+           <Link to="/team" className="hover:text-[#ED8A12]" onClick={toggleDrawer}>Team</Link>
+         <Link to="/services" className="hover:text-[#ED8A12]" onClick={toggleDrawer}>Services</Link>
+            <Link to="/companies" className="hover:text-[#ED8A12]" onClick={toggleDrawer}>Companies</Link>
+            <Link to="/contact" className="hover:text-[#ED8A12]" onClick={toggleDrawer}>Contact</Link>
         </nav>
       </div>
 

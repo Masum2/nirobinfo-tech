@@ -58,7 +58,7 @@ const AboutUs = () => {
       {/* Heading */}
       <div className="text-center mb-10">
         <h2 className="text-3xl font-bold mb-4">About Us</h2>
-        <p className="max-w-4xl mx-auto text-[#38B6FF]">
+        <p className="max-w-4xl mx-auto text-gray-600">
        At Nirob InfoTech LTD, we believe every great business idea deserves a powerful digital
 presence. Founded in 2025, we are a forward-thinking software and IT solutions company
 dedicated to helping organizations transform, innovate, and thrive in the digital age.
