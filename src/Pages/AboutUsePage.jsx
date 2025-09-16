@@ -1,6 +1,6 @@
 import React from "react";
 
-const AboutUsePage = () => {
+const AboutUsPage = () => {
   const cards = [
     {
       title: "Client-Centered Approach",
@@ -10,7 +10,7 @@ const AboutUsePage = () => {
     },
     {
       title: "End-to-End Support",
-      text: "From the very first consultation to post-project assistance, we’re by your side at every stage of your digital journey.",
+      text: "From the first consultation to post-project assistance, we’re by your side at every stage of your digital journey.",
       icon: "🤝",
       gradient: "from-orange-400 to-orange-600",
     },
@@ -45,43 +45,82 @@ const AboutUsePage = () => {
       {/* Hero Section */}
       <div className="relative w-full h-[50vh] md:h-[70vh]">
         <img
-          src="/images/about.png"
+          src="/images/aboutus.png"
           alt="About Us"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-fit"
         />
-     <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-  <h1 className="text-4xl md:text-6xl font-bold text-white">About Us</h1>
-</div>
-
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30 flex items-center justify-center">
+          <h1 className="text-4xl md:text-6xl font-extrabold tracking-wide text-white drop-shadow-lg">
+            About Us
+          </h1>
+        </div>
       </div>
 
-      {/* About Content */}
-   <div className="max-w-5xl mx-auto px-6 py-12 text-center">
-  <p className="text-lg md:text-xl leading-relaxed bg-gradient-to-r from-orange-500 to-white bg-clip-text text-transparent">
-    At <span className="font-semibold">Nirob InfoTech LTD</span>, your success
-    comes first. We don’t just deliver technology—we take the time to truly
-    understand your unique challenges, goals, and vision. Every solution we
-    create is carefully tailored to fit your business needs, ensuring real
-    impact and measurable growth.
-  </p>
+      {/* Intro */}
+      <div className="max-w-4xl mx-auto px-6 py-12 text-center">
+        <p className="text-lg md:text-xl leading-relaxed bg-gradient-to-r from-orange-400 to-yellow-300 bg-clip-text text-transparent font-medium">
+          At <span className="font-bold">Nirob InfoTech LTD</span>, we believe
+          every great business idea deserves a powerful digital presence. Founded
+          in 2025, we are a forward-thinking software and IT solutions company
+          dedicated to helping organizations transform, innovate, and thrive in
+          the digital age.
+        </p>
+      </div>
 
-  <p className="mt-6 text-lg md:text-xl leading-relaxed bg-gradient-to-r from-orange-500 to-white bg-clip-text text-transparent">
-    We believe in building more than projects—we build long-term partnerships
-    founded on trust, transparency, and mutual success. When you grow, we grow
-    with you.
-  </p>
+      {/* Icons Section */}
+      <div className="max-w-5xl mx-auto px-6 py-12">
+      <div className="flex items-center justify-center gap-8">
+  <img src="/images/icon1.png" className="w-20 h-20" alt="icon" />
+  <img src="/images/icon2.png" className="w-20 h-20" alt="icon" />
+  <img src="/images/icon3.png" className="w-20 h-20" alt="icon" />
 </div>
+        <p className="mt-8 text-gray-300 text-center leading-relaxed">
+         From startups to established enterprises, we work closely with our clients to understand their unique needs and craft custom solutions that go beyond expectations. Our team of passionate developers, designers, and strategists specialize in::
+        </p>
 
+        <ul className="mt-6 text-left max-w-2xl mx-auto space-y-3 text-gray-200">
+          <li>✅ Web Development – Building fast, secure, and scalable websites and applications..</li>
+          <li>✅  Mobile App Development – Creating user-friendly mobile experiences for iOS and Android.</li>
+          <li>
+            ✅Artificial Intelligence & Machine Learning – Developing intelligent solutions that optimize decision-making, efficiency, and growth.
+          </li>
+          <li>
+            ✅ 
+
+Digital Strategy & Innovation – Blending creativity with technology to deliver measurable business impact.
+          </li>
+        </ul>
+
+        <p className="mt-6 text-gray-300 text-center leading-relaxed">
+   What sets us apart is our commitment to innovation and quality. We don’t just deliver projects—we build long-term partnerships. Every line of code, every design, and every strategy we create is driven by our mission to empower businesses with technology that makes a real difference.
+        </p>
+             <p className="mt-6 text-gray-300 text-center leading-relaxed">
+At Nirob InfoTech LTD, we see ourselves not just as a technology provider, but as a digital growth partner. By combining technology, creativity, and strategy, we design digital experiences that strengthen brands, enhance customer engagement, and fuel sustainable success.        </p>
+      </div>
+
+      {/* Philosophy Section */}
+      <div className="max-w-4xl mx-auto px-6 py-12 text-center">
+        <p className="text-lg md:text-xl leading-relaxed bg-gradient-to-r from-orange-400 to-yellow-300 bg-clip-text text-transparent">
+          At <span className="font-semibold">Nirob InfoTech LTD</span>, your
+          success comes first. We don’t just deliver technology—we take the time
+          to truly understand your unique challenges, goals, and vision.
+        </p>
+
+        <p className="mt-6 text-lg md:text-xl leading-relaxed bg-gradient-to-r from-orange-400 to-yellow-300 bg-clip-text text-transparent">
+          We believe in building more than projects—we build long-term
+          partnerships founded on trust, transparency, and mutual success.
+        </p>
+      </div>
 
       {/* Card Section */}
-      <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {cards.map((card, index) => (
           <div
             key={index}
-            className={`rounded-2xl shadow-lg p-6 text-center bg-gradient-to-br ${card.gradient}`}
+            className={`rounded-2xl shadow-lg p-8 text-center bg-gradient-to-br ${card.gradient} transform hover:scale-105 transition duration-300 ease-in-out`}
           >
-            <div className="text-4xl mb-4">{card.icon}</div>
-            <h3 className="text-2xl font-semibold mb-3">{card.title}</h3>
+            <div className="text-5xl mb-4">{card.icon}</div>
+            <h3 className="text-2xl font-bold mb-3">{card.title}</h3>
             <p className="text-gray-100">{card.text}</p>
           </div>
         ))}
@@ -90,4 +129,4 @@ const AboutUsePage = () => {
   );
 };
 
-export default AboutUsePage;
+export default AboutUsPage;

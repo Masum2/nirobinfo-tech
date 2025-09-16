@@ -5,9 +5,10 @@ import {
   FaDollarSign,
   FaCogs,
   FaClock,
-  FaCertificate,
+  
 } from "react-icons/fa";
-
+import { TbMessageSearch } from "react-icons/tb";
+import { MdOutlineSupportAgent } from "react-icons/md";
 const OurProcess = () => {
   const steps = [
     {
@@ -25,13 +26,13 @@ const OurProcess = () => {
     {
       title: "Dedicated Client Support",
       description: "Providing affordable solutions within client’s budget.",
-      icon: <FaDollarSign className="text-3xl text-cyan-600" />,
+      icon: <MdOutlineSupportAgent  className="text-3xl text-cyan-600" />,
       position: "bottom-1/3 right-0 translate-x-[50%] translate-y-1/2", // right-bottom
     },
     {
       title: "Proven Track Record of Success",
       description: "Strict and thorough quality control measures..",
-      icon: <FaCertificate className="text-3xl text-cyan-600" />,
+      icon: <TbMessageSearch  className="text-3xl text-cyan-600" />,
       position: "bottom-[-8%] left-1/2 -translate-x-1/2", // bottom
     },
     {
@@ -49,7 +50,7 @@ const OurProcess = () => {
   ];
 
   return (
-    <section className="relative bg-gradient-to-b from-white to-cyan-50 text-gray-800 py-16 px-4 flex flex-col items-center">
+    <section className="relative bg-gradient-to-b mb-4 from-white to-cyan-50 text-gray-800 py-16 px-4 flex flex-col items-center">
       {/* Heading */}
       <div className="text-center max-w-2xl mb-12">
         <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -64,7 +65,7 @@ const OurProcess = () => {
       <div className="hidden lg:block relative w-[680px] h-[680px]">
         {/* Center Image */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0">
-          <div className="relative w-[420px] h-[420px]">
+          <div className="relative w-[360px] h-[330px]">
             <img
               src="/images/process1.png"
               alt="process-center"

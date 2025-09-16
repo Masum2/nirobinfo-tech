@@ -41,9 +41,9 @@ const Header = () => {
         </nav>
 
         {/* Call to Action */}
-        <button className="bg-white text-black px-4 py-2 rounded-full font-semibold cursor-pointer hover:text-[#FFFFFF] hover:bg-[#ED8A12] transition">
-          Schedule a Call Now
-        </button>
+        <div >
+          
+        </div>
       </div>
 
       {/* ---------- Mobile View ---------- */}

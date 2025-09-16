@@ -63,13 +63,13 @@ const DevelopmentProcess = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          From ideation to deployment, we follow a thorough development process
-          to turn innovative ideas into cutting-edge solutions, with precision
-          and reliability at every step.
+          From the spark of an idea to successful launch, we guide every stage of
+          development to convert visionary concepts into powerful, market-leading
+          solutions backed by meticulous execution and proven reliability..
         </motion.p>
 
         {/* Steps */}
-        <div className="mt-12 grid grid-cols-6 gap-8">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
           {steps.map((step, index) => (
             <motion.div
               key={index}
@@ -88,17 +88,17 @@ const DevelopmentProcess = () => {
                 />
                 <div className="relative text-center px-4">
                   <div className="flex justify-center mb-3">{step.icon}</div>
-                <h3 className="text-[16px] font-bold text-gray-800">
-  {step.title.length > 18 ? (
-    <>
-      {step.title.slice(0, 18)} <br />
-      {step.title.slice(18)}
-    </>
-  ) : (
-    step.title
-  )}
-</h3>
-                  <p className="text-[11px] text-gray-600 mt-2 break-words w-[24ch]">
+                  <h3 className="text-[16px] font-bold text-gray-800">
+                    {step.title.length > 19 ? (
+                      <>
+                        {step.title.slice(0, 19)} <br />
+                        {step.title.slice(19)}
+                      </>
+                    ) : (
+                      step.title
+                    )}
+                  </h3>
+                  <p className="text-[12px] font-semibold text-gray-600 mt-2 break-words w-[24ch]">
                     {step.description}
                   </p>
                 </div>

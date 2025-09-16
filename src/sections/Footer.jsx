@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaYoutube , FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Logo & About */}
         <div>
           <div className="flex items-center space-x-2">
-            <img src="/images/logo.png" alt="logo" className="w-14 h-14" />
+            <img src="/images/logo1.png" alt="logo" className="w-14 h-14" />
             <h2 className="text-xl font-bold text-white">
               Nirob <span className="text-[#38B6FF]">InfoTech LTD</span>
             </h2>
@@ -51,17 +51,18 @@ const Footer = () => {
           <p className="text-sm">✉ info@nirobitech.com</p>
 
           <div className="flex space-x-4 mt-4">
-            <a href="#" className="p-2 bg-gray-700 hover:bg-[#38B6FF] rounded-full transition">
+            <a href="https://www.facebook.com/profile.php?id=61580539836179" className="p-2 bg-gray-700 hover:bg-[#38B6FF] rounded-full transition">
               <FaFacebookF />
             </a>
-            <a href="#" className="p-2 bg-gray-700 hover:bg-[#38B6FF] rounded-full transition">
-              <FaTwitter />
+            <a href="https://www.linkedin.com/company/nirob-infotech-ltd/" className="p-2 bg-gray-700 hover:bg-[#38B6FF] rounded-full transition">
+           <FaLinkedinIn />
             </a>
-            <a href="#" className="p-2 bg-gray-700 hover:bg-[#38B6FF] rounded-full transition">
-              <FaLinkedinIn />
+            <a href="https://www.instagram.com/nirob_infotech/" className="p-2 bg-gray-700 hover:bg-[#38B6FF] rounded-full transition">
+             
+                 <FaInstagram />
             </a>
-            <a href="#" className="p-2 bg-gray-700 hover:bg-[#38B6FF] rounded-full transition">
-              <FaInstagram />
+            <a href="https://www.youtube.com/channel/UCqhnuQwJ62CQkJ-0aY8nslw" className="p-2 bg-gray-700 hover:bg-[#38B6FF] rounded-full transition">
+              <FaYoutube  />
             </a>
           </div>
         </div>

@@ -122,7 +122,7 @@ const AboutCompanies = () => {
           {companies.map((company, index) => (
             <div
               key={index}
-              className={`flex flex-col md:flex-row items-center gap-8 ${
+              className={`flex flex-col md:flex-row items-center gap-40 ${
                 index % 2 === 1 ? "md:flex-row-reverse" : ""
               }`}
             >
@@ -131,7 +131,7 @@ const AboutCompanies = () => {
                 <img
                   src={company.logo}
                   alt={company.name}
-                  className="w-28 h-28 object-contain mx-auto"
+                  className="w-38 h-38 object-contain mx-auto"
                 />
               </div>
 
