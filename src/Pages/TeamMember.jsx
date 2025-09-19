@@ -2,9 +2,9 @@ import React from 'react';
 
 const teamMembers = [
   {
-    name: "John Doe",
+    name: "Romzan",
     role: "Managing Director (MD)",
-    image: "/images/md.jpg", // replace with actual image path
+    image: "/images/ramzan.jpeg", // replace with actual image path
     social: {
       linkedin: "#",
       twitter: "#",
@@ -12,9 +12,9 @@ const teamMembers = [
     },
   },
   {
-    name: "Jane Smith",
+    name: "arafat",
     role: "Deputy Managing Director (DMD)",
-    image: "/images/dmd.jpg", // replace with actual image path
+    image: "/images/arafat.jpeg", // replace with actual image path
     social: {
       linkedin: "#",
       twitter: "#",
@@ -22,14 +22,59 @@ const teamMembers = [
     },
   },
   {
-    name: "Michael Brown",
+    name: "badhon",
     role: "General Manager (GM)",
-    image: "/images/gm1.jpg", // replace with actual image path
+    image: "/images/badhon.jpeg", // replace with actual image path
     social: {
       linkedin: "#",
       twitter: "#",
       facebook: "#",
     },
+    
+  },
+    {
+    name: "mohi",
+    role: "General Manager (GM)",
+    image: "/images/mohi.jpeg", // replace with actual image path
+    social: {
+      linkedin: "#",
+      twitter: "#",
+      facebook: "#",
+    },
+    
+  },
+    {
+    name: "Neon",
+    role: "General Manager (GM)",
+    image: "/images/Neon.jpeg", // replace with actual image path
+    social: {
+      linkedin: "#",
+      twitter: "#",
+      facebook: "#",
+    },
+    
+  },
+    {
+    name: "Pracurjo Sakib",
+    role: "General Manager (GM)",
+    image: "/images/Sakib.jpeg", // replace with actual image path
+    social: {
+      linkedin: "#",
+      twitter: "#",
+      facebook: "#",
+    },
+    
+  },
+      {
+    name: "Md.Tariqul Islam",
+    role: "General Manager (GM)",
+    image: "/images/tarik.jpeg", // replace with actual image path
+    social: {
+      linkedin: "#",
+      twitter: "#",
+      facebook: "#",
+    },
+    
   },
 ];
 
@@ -50,7 +95,7 @@ const TeamMember = () => {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-72 object-cover"
+                  className="w-full h-102 object-cover"
                 />
                 <div className="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                   <div className="flex space-x-4">

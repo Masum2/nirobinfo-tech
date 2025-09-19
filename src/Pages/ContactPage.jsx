@@ -71,6 +71,14 @@ const ContactPage = () => {
                 placeholder="Enter your email"
               />
             </div>
+               <div>
+              <label className="block mb-2 text-sm">Subject</label>
+              <input
+                type="Subject"
+                className="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-blue-500"
+                placeholder="Enter your Subject"
+              />
+            </div>
             <div>
               <label className="block mb-2 text-sm">Message</label>
               <textarea
