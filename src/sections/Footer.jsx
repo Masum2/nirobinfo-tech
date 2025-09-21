@@ -44,28 +44,30 @@ const Footer = () => {
         </div>
 
         {/* Contact & Socials */}
-        <div>
-          <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
-          <p className="text-sm">📍 Dhaka, Bangladesh</p>
-          <p className="text-sm">📞 +880 1234 567 890</p>
-          <p className="text-sm">✉ info@nirobitech.com</p>
+    <div>
+  <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
+  <p className="text-[13px] whitespace-nowrap">
+    📍F-18 Zakir Hossain Road, Lalmatia, Mohammadpur, Dhaka, Bangladesh
+  </p>
+  <p className="text-[13px]">📞 +8801878437942</p>
+  <p className="text-[13px]">✉  info@nirobinfotech.com</p>
 
-          <div className="flex space-x-4 mt-4">
-            <a href="https://www.facebook.com/profile.php?id=61580539836179" className="p-2 bg-gray-700 hover:bg-[#38B6FF] rounded-full transition">
-              <FaFacebookF />
-            </a>
-            <a href="https://www.linkedin.com/company/nirob-infotech-ltd/" className="p-2 bg-gray-700 hover:bg-[#38B6FF] rounded-full transition">
-           <FaLinkedinIn />
-            </a>
-            <a href="https://www.instagram.com/nirob_infotech/" className="p-2 bg-gray-700 hover:bg-[#38B6FF] rounded-full transition">
-             
-                 <FaInstagram />
-            </a>
-            <a href="https://www.youtube.com/channel/UCqhnuQwJ62CQkJ-0aY8nslw" className="p-2 bg-gray-700 hover:bg-[#38B6FF] rounded-full transition">
-              <FaYoutube  />
-            </a>
-          </div>
-        </div>
+  <div className="flex space-x-4 mt-4">
+    <a href="https://www.facebook.com/profile.php?id=61580539836179" className="p-2 bg-blue-600 rounded-full transition">
+      <FaFacebookF className="text-white" />
+    </a>
+    <a href="https://www.linkedin.com/company/nirob-infotech-ltd/" className="p-2 bg-blue-700 rounded-full transition">
+      <FaLinkedinIn className="text-white" />
+    </a>
+    <a href="https://www.instagram.com/nirob_infotech/" className="p-2 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 rounded-full transition">
+      <FaInstagram className="text-white" />
+    </a>
+    <a href="https://www.youtube.com/channel/UCqhnuQwJ62CQkJ-0aY8nslw" className="p-2 bg-red-600 rounded-full transition">
+      <FaYoutube className="text-white" />
+    </a>
+  </div>
+</div>
+
       </div>
 
       {/* Bottom Bar */}

@@ -2,7 +2,6 @@ import React from "react";
 import {
   FaMobileAlt,
   FaApple,
-  FaDesktop,
   FaCloud,
   FaGlobe,
   FaCogs,
@@ -12,10 +11,13 @@ import {
   FaMicrochip,
   FaFlask,
   FaBullhorn,
-  FaUsers,
+  FaShoppingCart,
+  FaVrCardboard,
+  FaProjectDiagram,
+  FaCheckCircle,
 } from "react-icons/fa";
 import { MdDesignServices } from "react-icons/md";
-import { motion } from "framer-motion"; // 👉 framer-motion import
+import { motion } from "framer-motion";
 
 const Services = () => {
   const services = [
@@ -79,6 +81,28 @@ const Services = () => {
       title: "UI/UX Design",
       desc: "Eye candy UI/UX design for smooth user experience & trust building.",
     },
+
+    // ✅ নতুন ৪টা সার্ভিস
+    {
+      icon: <FaShoppingCart className="text-cyan-400 text-3xl" />,
+      title: "E-Commerce Services",
+      desc: "Custom e-commerce platforms and online store development that engage & convert.",
+    },
+    {
+      icon: <FaVrCardboard className="text-cyan-400 text-3xl" />,
+      title: "AR/VR Development",
+      desc: "Immersive AR/VR applications for interactive training, simulation, and experiences.",
+    },
+    {
+      icon: <FaProjectDiagram className="text-cyan-400 text-3xl" />,
+      title: "ERP & CRM Development",
+      desc: "Custom ERP & CRM solutions to centralize data and streamline processes.",
+    },
+    {
+      icon: <FaCheckCircle className="text-cyan-400 text-3xl" />,
+      title: "Quality Assurance Testing",
+      desc: "Manual & automated testing to ensure usability, performance & security.",
+    },
   ];
 
   return (
@@ -91,16 +115,24 @@ const Services = () => {
       </div>
 
       {/* Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
         {services.map((service, index) => (
           <motion.div
             key={index}
             className="bg-gray-800/40 border border-gray-700 rounded-2xl p-6 text-center shadow-md"
-            initial={{ opacity: 0, y: 50 }} // শুরুর অবস্থা
-            whileInView={{ opacity: 1, y: 0 }} // স্ক্রল করলে effect
-            transition={{ duration: 0.6, delay: index * 0.1 }} // stagger effect
-            whileHover={{ scale: 1.05, boxShadow: "0px 0px 15px rgba(0, 255, 255, 0.5)" }} // hover animation
-            viewport={{ once: true }} // একবারই animation হবে
+            
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+    transition={{
+    duration: 0.35,   // 👉 দ্রুত হবে
+    delay: index * 0.05, // 👉 stagger effect ছোট
+    ease: "easeOut",  // 👉 smooth motion
+  }}
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0px 0px 15px rgba(0, 255, 255, 0.5)",
+            }}
+            viewport={{ once: true }}
           >
             <div className="flex justify-center mb-4">{service.icon}</div>
             <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
