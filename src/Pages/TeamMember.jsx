@@ -2,79 +2,52 @@ import React from 'react';
 
 const teamMembers = [
   {
-    name: "Romzan",
-    role: "Managing Director (MD)",
-    image: "/images/ramzan.jpeg", // replace with actual image path
-    social: {
-      linkedin: "#",
-      twitter: "#",
-      facebook: "#",
-    },
+    name: "K M Ramjan Ali",
+    role: "Chairman, Managing Director",
+image: "/images/ramzan.jpeg",
+    social: { linkedin: "#", twitter: "#", facebook: "#" },
   },
   {
-    name: "arafat",
-    role: "Deputy Managing Director (DMD)",
-    image: "/images/arafat.jpeg", // replace with actual image path
-    social: {
-      linkedin: "#",
-      twitter: "#",
-      facebook: "#",
-    },
+    name: "K M Yeaser Arafat",
+    role: "Managing Director & CEO",
+    image: "/images/arafat.jpeg",
+    social: { linkedin: "#", twitter: "#", facebook: "#" },
   },
   {
-    name: "badhon",
-    role: "General Manager (GM)",
-    image: "/images/badhon.jpeg", // replace with actual image path
-    social: {
-      linkedin: "#",
-      twitter: "#",
-      facebook: "#",
-    },
-    
+    name: "Md. Tariqul Islam",
+    role: "Advising Director",
+image: "/images/tarik.jpeg",
+    social: { linkedin: "#", twitter: "#", facebook: "#" },
   },
-    {
-    name: "mohi",
-    role: "General Manager (GM)",
-    image: "/images/mohi.jpeg", // replace with actual image path
-    social: {
-      linkedin: "#",
-      twitter: "#",
-      facebook: "#",
-    },
-    
+  {
+    name: "Wahid Anwar",
+    role: "Advisor",
+    image: "/images/wahid.jpeg",
+    social: { linkedin: "#", twitter: "#", facebook: "#" },
   },
-    {
-    name: "Neon",
-    role: "General Manager (GM)",
-    image: "/images/Neon.jpeg", // replace with actual image path
-    social: {
-      linkedin: "#",
-      twitter: "#",
-      facebook: "#",
-    },
-    
+  {
+    name: "Shoaibur Rahman Badhon",
+    role: "General Manager",
+    image: "/images/badhon.jpeg",
+    social: { linkedin: "#", twitter: "#", facebook: "#" },
   },
-    {
-    name: "Pracurjo Sakib",
-    role: "General Manager (GM)",
-    image: "/images/Sakib.jpeg", // replace with actual image path
-    social: {
-      linkedin: "#",
-      twitter: "#",
-      facebook: "#",
-    },
-    
+  {
+    name: "Tanvir Anjum Neon",
+    role: "IT Executive",
+image: "/images/Neon.jpeg",
+    social: { linkedin: "#", twitter: "#", facebook: "#" },
   },
-      {
-    name: "Md.Tariqul Islam",
-    role: "General Manager (GM)",
-    image: "/images/tarik.jpeg", // replace with actual image path
-    social: {
-      linkedin: "#",
-      twitter: "#",
-      facebook: "#",
-    },
-    
+  {
+    name: "Muhammad Nazmus Sakib Prachurjo",
+    role: "Digital Executive",
+image: "/images/Sakib.jpeg",
+    social: { linkedin: "#", twitter: "#", facebook: "#" },
+  },
+  {
+    name: "Mohiuddin Mohi",
+    role: "Marketing Executive",
+    image: "/images/mohi.jpeg",
+    social: { linkedin: "#", twitter: "#", facebook: "#" },
   },
 ];
 
