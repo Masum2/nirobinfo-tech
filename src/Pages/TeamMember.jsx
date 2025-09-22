@@ -5,49 +5,65 @@ import { FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
 const teamMembers = [
   {
     name: "K M Ramjan Ali",
-    role: "Chairman, Managing Director",
+    title: "Chairman",
+    role: "Managing Director",
+    company: "Nirob InfoTech LTD",
     image: "/images/ramzan.jpeg",
     social: { linkedin: "#", twitter: "#", facebook: "#" },
   },
   {
     name: "K M Yeaser Arafat",
-    role: "Managing Director & CEO",
+    title: "Managing Director & CEO",
+    role: "Director & CEO",
+    company: "Nirob InfoTech LTD",
     image: "/images/arafat.jpeg",
     social: { linkedin: "#", twitter: "#", facebook: "#" },
   },
   {
     name: "Md. Tariqul Islam",
-    role: "Advising Director",
+    title: "Advising Director",
+    role: "",
+    company: "Nirob InfoTech LTD",
     image: "/images/tarik.jpeg",
     social: { linkedin: "#", twitter: "#", facebook: "#" },
   },
   {
     name: "Wahid Anwar",
-    role: "Advisor",
+    title: "Advisor",
+    role: "",
+    company: "Nirob InfoTech LTD",
     image: "/images/wahid.jpeg",
     social: { linkedin: "#", twitter: "#", facebook: "#" },
   },
   {
     name: "Shoaibur Rahman Badhon",
-    role: "General Manager",
+    title: "General Manager",
+    role: "",
+    company: "Nirob InfoTech LTD",
     image: "/images/badhon.jpeg",
     social: { linkedin: "#", twitter: "#", facebook: "#" },
   },
   {
     name: "Tanvir Anjum Neon",
-    role: "IT Executive",
+    title: "IT Executive",
+    role: "",
+    company: "Nirob InfoTech LTD",
     image: "/images/Neon.jpeg",
     social: { linkedin: "#", twitter: "#", facebook: "#" },
   },
   {
     name: "Muhammad Nazmus Sakib Prachurjo",
-    role: "Digital Executive",
+    title: "Digital Executive",
+    role: "",
+    company: "Nirob InfoTech LTD",
     image: "/images/Sakib.jpeg",
     social: { linkedin: "#", twitter: "#", facebook: "#" },
   },
   {
     name: "Mohiuddin Mohi",
-    role: "Marketing Executive",
+    title: "Marketing Executive",
+    role: "",
+    company: "Nirob InfoTech LTD",
     image: "/images/mohi.jpeg",
     social: { linkedin: "#", twitter: "#", facebook: "#" },
   },
@@ -55,7 +71,7 @@ const teamMembers = [
 
 const TeamMember = () => {
   return (
-     <div className="bg-gray-900 py-16">
+<div className="bg-gray-900 text-white py-16">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-100">
           Our Team
@@ -75,7 +91,7 @@ const TeamMember = () => {
                   alt={member.name}
                   className="w-full h-full object-cover object-top rounded-t-2xl"
                 />
-                {/* <div className="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+                <div className="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
                   <div className="flex space-x-5">
                     {member.social.linkedin && (
                       <a
@@ -108,15 +124,23 @@ const TeamMember = () => {
                       </a>
                     )}
                   </div>
-                </div> */}
+                </div>
               </div>
 
               {/* Text Section */}
-              <div className="p-6 text-center">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">
+              <div className="p-6 text-center bg-gray-700">
+                <h3 className="text-xl font-bold text-gray-100 mb-2">
                   {member.name}
                 </h3>
-                <p className="text-gray-600">{member.role}</p>
+                {member.title && (
+                  <p className="text-gray-100 font-medium">{member.title}</p>
+                )}
+                {member.role && (
+                  <p className="text-gray-100">{member.role}</p>
+                )}
+                {member.company && (
+                  <p className="text-gray-100 text-sm">{member.company}</p>
+                )}
               </div>
             </motion.div>
           ))}
