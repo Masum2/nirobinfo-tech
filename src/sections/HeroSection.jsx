@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
     const images = [
@@ -57,15 +58,16 @@ const HeroSection = () => {
                 >
                     Your trusted tech partner — from bold ideas to big success..
                 </motion.p>
-
+<Link to="/about">
                 <motion.button
-                    className="mt-6 bg-[#12A0E2] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#ED8A12] transition"
+                    className="mt-6 bg-[#12A0E2] cursor-pointer text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#ED8A12] transition"
                     initial={{ scale: 0.8, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 0.8, delay: 0.9 }}
                 >
-                    Book a Meeting
+                    About Us
                 </motion.button>
+                </Link>
             </div>
           
         </section>

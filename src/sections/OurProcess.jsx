@@ -50,13 +50,13 @@ const OurProcess = () => {
   ];
 
   return (
-    <section className="relative bg-gradient-to-b mb-4 from-white to-cyan-50 text-gray-800 py-16 px-4 flex flex-col items-center">
+    <section className="relative bg-gradient-to-b mb-12 from-white to-cyan-50 text-gray-800 py-16 px-4 flex flex-col items-center">
       {/* Heading */}
       <div className="text-center max-w-2xl mb-12">
         <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
           Why Choose Us?
         </h2>
-        <p className="text-gray-600 text-sm md:text-lg">
+        <p className="text-gray-600 text-sm md:text-lg mb-12">
         “Your ambitions deserve more than promises. Nirob InfoTech LTD labs partners with you, bringing innovation, clarity, and passion to every step so your project creates enduring change.”
         </p>
       </div>

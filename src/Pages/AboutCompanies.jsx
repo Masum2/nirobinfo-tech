@@ -18,7 +18,8 @@ const AboutCompanies = () => {
     },
     {
       name: "Nirob Agro Care LTD",
-      logo: "/images/logo3.png",
+ 
+         logo: "/images/logo2.png",
       tagline: "Where pure possibilities are served, quality to nourish the world",
       description: `Nirob AgroCare LTD is a trusted export-import and supply company, dedicated to providing high-quality 
       fertilizers, chemicals, food products, wheat, and other agro-based items.`,
@@ -42,7 +43,7 @@ const AboutCompanies = () => {
     },
     {
       name: "Kumkum Construction",
-      logo: "/images/logo2.png",
+      logo: "/images/logo3.png",
       tagline: "We are committed to excellence in the forefront of construction",
       description: `Kumkum Construction is a leading name in the construction industry, delivering reliable 
       and innovative building solutions across various sectors.`,

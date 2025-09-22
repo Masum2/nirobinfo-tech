@@ -103,6 +103,11 @@ const Services = () => {
       title: "Quality Assurance Testing",
       desc: "Manual & automated testing to ensure usability, performance & security.",
     },
+      {
+      icon: <FaCloud className="text-cyan-400 text-3xl" />,
+      title: "SAAS Development",
+      desc: "Complete designing, building and lounching and scalable Software-as-a-Service(SaaS) cross-platform solution for startups.",
+    },
   ];
 
   return (

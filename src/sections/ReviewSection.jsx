@@ -81,7 +81,7 @@ const ReviewSection = () => {
  
 
       {/* Scrolling Reviews */}
-      <div className="overflow-hidden relative">
+      {/* <div className="overflow-hidden relative">
         <motion.div
           className="flex gap-8 items-stretch w-max"
           animate={{ x: ["0%", "-50%"] }}
@@ -92,19 +92,18 @@ const ReviewSection = () => {
               key={index}
               className="bg-gray-800 rounded-2xl shadow-lg p-6 w-80 flex-shrink-0 hover:scale-105 transition-transform duration-300"
             >
-              {/* Rating stars */}
+     
               <div className="flex mb-3 text-yellow-400">
                 {Array.from({ length: review.rating }).map((_, i) => (
                   <FaStar key={i} />
                 ))}
               </div>
 
-              {/* Review text */}
+
               <p className="text-gray-300 text-sm mb-5 leading-relaxed">
                 {review.review}
               </p>
 
-              {/* Profile info */}
               <div className="flex items-center gap-4 mt-auto">
                 <img
                   src={review.image}
@@ -121,7 +120,7 @@ const ReviewSection = () => {
             </div>
           ))}
         </motion.div>
-      </div>
+      </div> */}
 
       {/* Logos */}
       <div className="mb-6 animate-fadeDown mt-8 flex justify-center align-items-center">

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaYoutube , FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -52,20 +53,49 @@ const Footer = () => {
   <p className="text-[13px]">📞 +8801878437942</p>
   <p className="text-[13px]">✉  info@nirobinfotech.com</p>
 
-  <div className="flex space-x-4 mt-4">
-    <a href="https://www.facebook.com/profile.php?id=61580539836179" className="p-2 bg-blue-600 rounded-full transition">
-      <FaFacebookF className="text-white" />
-    </a>
-    <a href="https://www.linkedin.com/company/nirob-infotech-ltd/" className="p-2 bg-blue-700 rounded-full transition">
-      <FaLinkedinIn className="text-white" />
-    </a>
-    <a href="https://www.instagram.com/nirob_infotech/" className="p-2 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 rounded-full transition">
-      <FaInstagram className="text-white" />
-    </a>
-    <a href="https://www.youtube.com/channel/UCqhnuQwJ62CQkJ-0aY8nslw" className="p-2 bg-red-600 rounded-full transition">
-      <FaYoutube className="text-white" />
-    </a>
-  </div>
+ <div className="flex space-x-4 mt-4">
+  <a
+    href="https://www.facebook.com/profile.php?id=61580539836179"
+    className="p-2 bg-blue-600 rounded-full transition"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaFacebookF className="text-white" />
+  </a>
+  <a
+    href="https://www.linkedin.com/company/nirob-infotech-ltd/"
+    className="p-2 bg-blue-700 rounded-full transition"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaLinkedinIn className="text-white" />
+  </a>
+  <a
+    href="https://www.instagram.com/nirob_infotech/"
+    className="p-2 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 rounded-full transition"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaInstagram className="text-white" />
+  </a>
+  <a
+    href="https://www.youtube.com/channel/UCqhnuQwJ62CQkJ-0aY8nslw"
+    className="p-2 bg-red-600 rounded-full transition"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaYoutube className="text-white" />
+  </a>
+  {/* ✅ X (Twitter) */}
+  <a
+    href="https://x.com/Nirob_InfoTech"
+    className="p-2 bg-black rounded-full transition"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaXTwitter className="text-white" />
+  </a>
+</div>
 </div>
 
       </div>

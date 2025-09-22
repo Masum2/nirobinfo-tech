@@ -28,7 +28,7 @@ const ContactPage = () => {
               <div>
                 <h4 className="font-semibold">Office Address</h4>
                 <p className="text-gray-400">
-                  123 Business Street, Dhaka, Bangladesh
+                  F-18 Zakir Hossain Road, Lalmatia, Mohammadpur, Dhaka, Bangladesh
                 </p>
               </div>
             </div>
@@ -37,7 +37,7 @@ const ContactPage = () => {
               <FaPhoneAlt className="w-6 h-6 text-green-400" />
               <div>
                 <h4 className="font-semibold">Phone</h4>
-                <p className="text-gray-400">+880 1234 567 890</p>
+                <p className="text-gray-400">+8801878437942</p>
               </div>
             </div>
 
@@ -45,7 +45,7 @@ const ContactPage = () => {
               <FaEnvelope className="w-6 h-6 text-red-400" />
               <div>
                 <h4 className="font-semibold">Email</h4>
-                <p className="text-gray-400">info@company.com</p>
+                <p className="text-gray-400">info@nirobinfotech.com</p>
               </div>
             </div>
           </div>
@@ -71,12 +71,12 @@ const ContactPage = () => {
                 placeholder="Enter your email"
               />
             </div>
-               <div>
+            <div>
               <label className="block mb-2 text-sm">Subject</label>
               <input
-                type="Subject"
+                type="text"
                 className="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-blue-500"
-                placeholder="Enter your Subject"
+                placeholder="Enter subject"
               />
             </div>
             <div>
@@ -98,15 +98,16 @@ const ContactPage = () => {
       </div>
 
       {/* Map Section */}
-      <div className="w-full h-[400px]">
+      <div className="w-full h-[400px] lg:h-[500px]">
         <iframe
-          title="Google Map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902441123456!2d90.39945231543142!3d23.75088598458961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8f9d8b0f0f7%3A0xabcdef123456789!2sDhaka!5e0!3m2!1sen!2sbd!4v1709999999999"
+          title="Google Map - Nirob Infotech Office"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902441123456!2d90.39945231543142!3d23.75088598458961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8f9d8b0f0f7%3A0xabcdef123456789!2sF-18%20Zakir%20Hossain%20Road%2C%20Lalmatia%2C%20Mohammadpur%2C%20Dhaka%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1709999999999"
           width="100%"
           height="100%"
           style={{ border: 0 }}
           allowFullScreen=""
           loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
     </div>

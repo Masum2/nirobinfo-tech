@@ -1,10 +1,12 @@
-import React from 'react';
+import React from "react";
+import { motion } from "framer-motion";
+import { FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
 
 const teamMembers = [
   {
     name: "K M Ramjan Ali",
     role: "Chairman, Managing Director",
-image: "/images/ramzan.jpeg",
+    image: "/images/ramzan.jpeg",
     social: { linkedin: "#", twitter: "#", facebook: "#" },
   },
   {
@@ -16,7 +18,7 @@ image: "/images/ramzan.jpeg",
   {
     name: "Md. Tariqul Islam",
     role: "Advising Director",
-image: "/images/tarik.jpeg",
+    image: "/images/tarik.jpeg",
     social: { linkedin: "#", twitter: "#", facebook: "#" },
   },
   {
@@ -34,13 +36,13 @@ image: "/images/tarik.jpeg",
   {
     name: "Tanvir Anjum Neon",
     role: "IT Executive",
-image: "/images/Neon.jpeg",
+    image: "/images/Neon.jpeg",
     social: { linkedin: "#", twitter: "#", facebook: "#" },
   },
   {
     name: "Muhammad Nazmus Sakib Prachurjo",
     role: "Digital Executive",
-image: "/images/Sakib.jpeg",
+    image: "/images/Sakib.jpeg",
     social: { linkedin: "#", twitter: "#", facebook: "#" },
   },
   {
@@ -53,33 +55,36 @@ image: "/images/Sakib.jpeg",
 
 const TeamMember = () => {
   return (
-    <div className="bg-gray-900 text-white py-16">
-      <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+     <div className="bg-gray-900 py-16">
+      <div className="max-w-7xl mx-auto px-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-100">
           Our Team
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+              whileHover={{ scale: 1.05 }}
+              className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
             >
-              <div className="relative">
+              {/* Image Section */}
+              <div className="relative w-full h-64">
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-102 object-cover"
+                  className="w-full h-full object-cover object-top rounded-t-2xl"
                 />
-                <div className="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <div className="flex space-x-4">
+                {/* <div className="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+                  <div className="flex space-x-5">
                     {member.social.linkedin && (
                       <a
                         href={member.social.linkedin}
                         target="_blank"
                         rel="noreferrer"
-                        className="text-white text-xl hover:text-blue-500"
+                        className="text-white text-2xl hover:text-blue-500"
                       >
-                        <i className="fab fa-linkedin"></i>
+                        <FaLinkedin />
                       </a>
                     )}
                     {member.social.twitter && (
@@ -87,9 +92,9 @@ const TeamMember = () => {
                         href={member.social.twitter}
                         target="_blank"
                         rel="noreferrer"
-                        className="text-white text-xl hover:text-blue-400"
+                        className="text-white text-2xl hover:text-blue-400"
                       >
-                        <i className="fab fa-twitter"></i>
+                        <FaTwitter />
                       </a>
                     )}
                     {member.social.facebook && (
@@ -97,21 +102,23 @@ const TeamMember = () => {
                         href={member.social.facebook}
                         target="_blank"
                         rel="noreferrer"
-                        className="text-white text-xl hover:text-blue-600"
+                        className="text-white text-2xl hover:text-blue-600"
                       >
-                        <i className="fab fa-facebook"></i>
+                        <FaFacebook />
                       </a>
                     )}
                   </div>
-                </div>
+                </div> */}
               </div>
+
+              {/* Text Section */}
               <div className="p-6 text-center">
-                <h3 className="text-xl md:text-2xl font-bold mb-2">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">
                   {member.name}
                 </h3>
-                <p className="text-gray-300">{member.role}</p>
+                <p className="text-gray-600">{member.role}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

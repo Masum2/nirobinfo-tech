@@ -68,35 +68,53 @@ const AboutUsPage = () => {
       </div>
 
       {/* Icons Section */}
-      <div className="max-w-5xl mx-auto px-6 py-12">
-      <div className="flex items-center justify-center gap-8">
-  <img src="/images/icon1.png" className="w-20 h-20" alt="icon" />
-  <img src="/images/icon2.png" className="w-20 h-20" alt="icon" />
-  <img src="/images/icon3.png" className="w-20 h-20" alt="icon" />
+     <div className="max-w-5xl mx-auto px-6 py-12">
+  <div className="bg-gradient-to-br from-gray-800/70 to-gray-900/70 backdrop-blur-md rounded-2xl shadow-xl p-8">
+    {/* Icons */}
+    <div className="flex items-center justify-center gap-8">
+      <img src="/images/icon1.png" className="w-20 h-20" alt="icon" />
+      <img src="/images/icon2.png" className="w-20 h-20" alt="icon" />
+      <img src="/images/icon3.png" className="w-20 h-20" alt="icon" />
+    </div>
+
+    {/* Paragraph */}
+    <p className="mt-8 text-gray-300 text-center leading-relaxed">
+      From startups to established enterprises, we work closely with our clients
+      to understand their unique needs and craft custom solutions that go beyond
+      expectations. Our team of passionate developers, designers, and strategists
+      specialize in:
+    </p>
+
+    {/* List */}
+    <ul className="mt-6 text-left max-w-2xl mx-auto space-y-3 text-gray-200">
+      <li>✅ Web Development – Building fast, secure, and scalable websites and applications.</li>
+      <li>✅ Mobile App Development – Creating user-friendly mobile experiences for iOS and Android.</li>
+      <li>
+        ✅ Artificial Intelligence & Machine Learning – Developing intelligent
+        solutions that optimize decision-making, efficiency, and growth.
+      </li>
+      <li>
+        ✅ Digital Strategy & Innovation – Blending creativity with technology to
+        deliver measurable business impact.
+      </li>
+    </ul>
+
+    {/* More Paragraphs */}
+    <p className="mt-6 text-gray-300 text-center leading-relaxed">
+      What sets us apart is our commitment to innovation and quality. We don’t
+      just deliver projects—we build long-term partnerships. Every line of code,
+      every design, and every strategy we create is driven by our mission to
+      empower businesses with technology that makes a real difference.
+    </p>
+    <p className="mt-6 text-gray-300 text-center leading-relaxed">
+      At Nirob InfoTech LTD, we see ourselves not just as a technology provider,
+      but as a digital growth partner. By combining technology, creativity, and
+      strategy, we design digital experiences that strengthen brands, enhance
+      customer engagement, and fuel sustainable success.
+    </p>
+  </div>
 </div>
-        <p className="mt-8 text-gray-300 text-center leading-relaxed">
-         From startups to established enterprises, we work closely with our clients to understand their unique needs and craft custom solutions that go beyond expectations. Our team of passionate developers, designers, and strategists specialize in::
-        </p>
 
-        <ul className="mt-6 text-left max-w-2xl mx-auto space-y-3 text-gray-200">
-          <li>✅ Web Development – Building fast, secure, and scalable websites and applications..</li>
-          <li>✅  Mobile App Development – Creating user-friendly mobile experiences for iOS and Android.</li>
-          <li>
-            ✅Artificial Intelligence & Machine Learning – Developing intelligent solutions that optimize decision-making, efficiency, and growth.
-          </li>
-          <li>
-            ✅ 
-
-Digital Strategy & Innovation – Blending creativity with technology to deliver measurable business impact.
-          </li>
-        </ul>
-
-        <p className="mt-6 text-gray-300 text-center leading-relaxed">
-   What sets us apart is our commitment to innovation and quality. We don’t just deliver projects—we build long-term partnerships. Every line of code, every design, and every strategy we create is driven by our mission to empower businesses with technology that makes a real difference.
-        </p>
-             <p className="mt-6 text-gray-300 text-center leading-relaxed">
-At Nirob InfoTech LTD, we see ourselves not just as a technology provider, but as a digital growth partner. By combining technology, creativity, and strategy, we design digital experiences that strengthen brands, enhance customer engagement, and fuel sustainable success.        </p>
-      </div>
 
       {/* Philosophy Section */}
       <div className="max-w-4xl mx-auto px-6 py-12 text-center">
