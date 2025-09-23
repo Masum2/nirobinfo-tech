@@ -17,7 +17,7 @@ import ServicesPage from './Pages/ServicesPage';
 import AboutCompanies from './Pages/AboutCompanies';
 import TeamMember from './Pages/TeamMember';
 import ContactPage from './Pages/ContactPage';
-import CivilCalculator from './Pages/CivilCalculator';
+
 
 // ✅ Landing Page (সব সেকশন একসাথে)
 function LandingPage() {

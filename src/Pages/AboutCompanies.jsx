@@ -72,7 +72,7 @@ const AboutCompanies = () => {
       </div>
 
       {/* Companies Section */}
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      <div className="max-w-7xl mx-auto px-6 py-14">
         {/* Logos Row */}
         <div className="flex flex-wrap justify-center items-center gap-8 px-6 py-6 bg-gray-800/40 backdrop-blur-md border border-gray-700 rounded-xl mb-16">
           {[
