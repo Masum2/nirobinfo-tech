@@ -97,12 +97,16 @@ const TeamMember = () => {
 
     {index < 2 ? (
       <>
-        {member.title && <p className="text-gray-100">{member.title}</p>}
-        {member.company && <p className="text-gray-100">{member.company}</p>}
-        {member.role && <p className="text-gray-100">{member.role}</p>}
-        {member.company2 && <p className="text-gray-100">{member.company2}</p>}
-        {member.company3 && <p className="text-gray-100">{member.company3}</p>}
-        {member.company4 && <p className="text-gray-100">{member.company4}</p>}
+ {member.title && (
+    <p className="text-gray-100 font-bold italic">{member.title}</p>
+  )}
+  {member.company && <p className="text-gray-100">{member.company}</p>}
+  {member.role && (
+    <p className="text-gray-100 font-bold italic">{member.role}</p>
+  )}
+  {member.company2 && <p className="text-gray-100">{member.company2}</p>}
+  {member.company3 && <p className="text-gray-100">{member.company3}</p>}
+  {member.company4 && <p className="text-gray-100">{member.company4}</p>}
       </>
     ) : (
       <>
