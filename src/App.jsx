@@ -17,6 +17,7 @@ import ServicesPage from './Pages/ServicesPage';
 import AboutCompanies from './Pages/AboutCompanies';
 import TeamMember from './Pages/TeamMember';
 import ContactPage from './Pages/ContactPage';
+import CivilCalculator from './Pages/CivilCalculator';
 
 // ✅ Landing Page (সব সেকশন একসাথে)
 function LandingPage() {
@@ -55,6 +56,7 @@ function App() {
             <Route path="/companies" element={<AboutCompanies />} />
             <Route path="/team" element={<TeamMember />} />
             <Route path="/contact" element={<ContactPage />} />
+             <Route path="/civil" element={<CivilCalculator />} />
           </Routes>
         </main>
 
