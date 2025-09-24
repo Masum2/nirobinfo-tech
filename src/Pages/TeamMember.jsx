@@ -65,6 +65,26 @@ const teamMembers = [
     company: "Nirob InfoTech LTD",
     image: "/images/mohi.jpeg",
   },
+    {
+      
+
+
+    name: "Omar Faruk Fahim",
+    title: "Marketing Executive",
+    role: "",
+    company: "Nirob InfoTech LTD",
+    image: "/images/fahim.jpeg",
+  },
+    {
+      
+
+
+    name: "Minhajur Rahman ",
+    title: "IT Executive",
+    role: "",
+    company: "Nirob InfoTech LTD",
+    image: "/images/Minhajur.jpeg",
+  },
 ];
 
 const TeamMember = () => {
@@ -76,51 +96,58 @@ const TeamMember = () => {
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
-          {teamMembers.map((member, index) => (
-          <motion.div
-  key={index}
-  whileHover={{ scale: 1.05 }}
-  className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 bg-gray-700"
+         {teamMembers.map((member, index) => (
+  <motion.div
+    key={index}
+    whileHover={{ scale: 1.05 }}
+    className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 bg-gray-700"
+  >
+    {/* Image Section */}
+    <div className="relative w-full h-64">
+      <img
+        src={member.image}
+        alt={member.name}
+        className="w-full h-full object-cover object-top rounded-t-2xl"
+      />
+    </div>
+
+    {/* Text Section */}
+ <div
+  className={`p-3 text-center ${
+    index === 2 || index === 3
+      ? "flex flex-col items-center justify-center h-48"
+      : ""
+  }`}
 >
-  {/* Image Section */}
-  <div className="relative w-full h-64">
-    <img
-      src={member.image}
-      alt={member.name}
-      className="w-full h-full object-cover object-top rounded-t-2xl"
-    />
-  </div>
+  <h3 className="text-xl font-bold text-gray-100 mb-2">{member.name}</h3>
 
-  {/* Text Section */}
-  <div className="p-3 text-center">
-    <h3 className="text-xl font-bold text-gray-100 mb-2">{member.name}</h3>
-
-    {index < 2 ? (
-      <>
- {member.title && (
-    <p className="text-gray-100 font-bold italic">{member.title}</p>
+  {index < 2 ? (
+    <>
+      {member.title && (
+        <p className="text-gray-100 font-bold italic">{member.title}</p>
+      )}
+      {member.company && <p className="text-gray-100">{member.company}</p>}
+      {member.role && (
+        <p className="text-gray-100 font-bold italic">{member.role}</p>
+      )}
+      {member.company2 && <p className="text-gray-100">{member.company2}</p>}
+      {member.company3 && <p className="text-gray-100">{member.company3}</p>}
+      {member.company4 && <p className="text-gray-100">{member.company4}</p>}
+    </>
+  ) : (
+    <>
+      {member.title && <p className="text-gray-100">{member.title}</p>}
+      {member.company && (
+        <p className="text-gray-100 text-sm">{member.company}</p>
+      )}
+      {member.role && <p className="text-gray-100">{member.role}</p>}
+    </>
   )}
-  {member.company && <p className="text-gray-100">{member.company}</p>}
-  {member.role && (
-    <p className="text-gray-100 font-bold italic">{member.role}</p>
-  )}
-  {member.company2 && <p className="text-gray-100">{member.company2}</p>}
-  {member.company3 && <p className="text-gray-100">{member.company3}</p>}
-  {member.company4 && <p className="text-gray-100">{member.company4}</p>}
-      </>
-    ) : (
-      <>
-        {member.title && <p className="text-gray-100">{member.title}</p>}
-        {member.company && (
-          <p className="text-gray-100 text-sm">{member.company}</p>
-        )}
-        {member.role && <p className="text-gray-100">{member.role}</p>}
-      </>
-    )}
-  </div>
-</motion.div>
+</div>
 
-          ))}
+  </motion.div>
+))}
+
         </div>
       </div>
     </div>
