@@ -37,7 +37,7 @@ const Header = () => {
          <Link to="/services" className="hover:text-[#ED8A12]">Services</Link>
             <Link to="/companies" className="hover:text-[#ED8A12]">Companies</Link>
             <Link to="/contact" className="hover:text-[#ED8A12]">Contact</Link>
-                   <Link to="/civil" className="hover:text-[#ED8A12]">Civil calculator</Link>
+                 
             
         
         </nav>
