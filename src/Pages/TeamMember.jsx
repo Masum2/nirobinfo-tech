@@ -24,19 +24,12 @@ const teamMembers = [
   },
   {
     name: "Md. Tariqul Islam",
-    title: "Advising Director",
+    title: "Executive Director",
     role: "",
     company: "Nirob InfoTech LTD",
     image: "/images/tarik.jpeg",
   },
-  {
-    name: "Wahid Anwar",
-    title: "Advisor",
-    role: "",
-    company: "Nirob InfoTech LTD",
-    image: "/images/wahid.jpeg",
-    social: { linkedin: "#", twitter: "#", facebook: "#" },
-  },
+
   {
     name: "Shoaibur Rahman Badhon",
     title: "General Manager",
@@ -44,47 +37,10 @@ const teamMembers = [
     company: "Nirob InfoTech LTD",
     image: "/images/badhon.jpeg",
   },
-  {
-    name: "Tanvir Anjum Neon",
-    title: "IT Executive",
-    role: "",
-    company: "Nirob InfoTech LTD",
-    image: "/images/Neon.jpeg",
-  },
-  {
-    name: "Muhammad Nazmus Sakib Prachurjo",
-    title: "Digital Executive",
-    role: "",
-    company: "Nirob InfoTech LTD",
-    image: "/images/Sakib.jpeg",
-  },
-  {
-    name: "Mohiuddin Mohi",
-    title: "Marketing Executive",
-    role: "",
-    company: "Nirob InfoTech LTD",
-    image: "/images/mohi.jpeg",
-  },
-    {
-      
+  
 
 
-    name: "Omar Faruk Fahim",
-    title: "Marketing Executive",
-    role: "",
-    company: "Nirob InfoTech LTD",
-    image: "/images/fahim.jpeg",
-  },
-    {
-      
-
-
-    name: "Minhajur Rahman ",
-    title: "IT Executive",
-    role: "",
-    company: "Nirob InfoTech LTD",
-    image: "/images/Minhajur.jpeg",
-  },
+ 
 ];
 
 const TeamMember = () => {

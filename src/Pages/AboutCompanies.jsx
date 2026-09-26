@@ -60,7 +60,7 @@ const AboutCompanies = () => {
       {/* Hero Section */}
       <div className="relative w-full h-[70vh] md:h-[80vh]">
         <img
-          src="/images/company.png"
+          src="/images/company.jpg"
           alt="Companies"
           className="w-full h-full object-cover"
         />

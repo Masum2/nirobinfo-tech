@@ -6,9 +6,9 @@ const techs = [
   { name: "PostgreSQL", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
   { name: "MongoDB", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
   { name: "Figma", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
-  { name: "AWS", src: "https://svgmix.com/uploads/skillicons/29026e-aws-dark.svg" },
+  { name: "AWS", src: "https://www.logo.wine/a/logo/Amazon_Web_Services/Amazon_Web_Services-Logo.wine.svg" },
   { name: "Docker", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
-  { name: "GitHub", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/2048px-Github-desktop-logo-symbol.svg.png" },
+  { name: "GitHub", src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS40r83nms649tV6NqrBPsg7_hbrO9astFr2wriik_GQ&s" },
 ];
 
 const ServicesAnimation = () => {
