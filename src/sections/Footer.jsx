@@ -1,12 +1,11 @@
 import React from "react";
-import { FaFacebookF, FaYoutube, FaLinkedinIn, FaInstagram, FaPhoneAlt } from "react-icons/fa";
+import { FaFacebookF, FaYoutube , FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { MdLocationOn, MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 pt-12 border-t border-gray-700">
-      <div className="max-w-6xl mx-auto pl-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
 
         {/* Logo & About */}
         <div>
@@ -17,9 +16,8 @@ const Footer = () => {
             </h2>
           </div>
           <p className="mt-4 text-sm text-gray-400">
-            <span className="font-bold">Empowering the Tech Flow ✦</span>
-            <br />
-            Delivering creative solutions with modern design & technology.
+           
+            <span style={{fontWeight:'bold'}}>Empowering the Tech Flow ✦</span><br></br> Delivering creative solutions with modern design & technology.
           </p>
         </div>
 
@@ -47,30 +45,15 @@ const Footer = () => {
         </div>
 
         {/* Contact & Socials */}
-       {/* Contact & Socials */}
-<div>
+    <div>
   <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
-
-<p className="flex items-start text-sm">
-  <span className="text-[#38B6FF] text-xl mr-2 flex-shrink-0">
-    <MdLocationOn />
-  </span>
-  <span>
-   NIT Office Location : # 5/8 (1st Floor) , Block-B,
-Lalmatia, Mohammadpur, Dhaka-1207
-  </span>
-</p>
-
-  <p className="flex items-center gap-2 text-sm mt-2">
-    <FaPhoneAlt className="text-[#38B6FF] text-lg" />
-    +8801878437942
+  <p className="text-[13px] whitespace-nowrap">
+    📍Office Location : # 5/8 (1st Floor) , Block-B, Lalmatia, Mohammadpur, Dhaka-1207
   </p>
+  <p className="text-[13px]">📞 +8801878437942</p>
+  <p className="text-[13px]">✉   nirobinfotechltd@gmail.com</p>
 
-  <p className="flex items-center gap-2 text-sm mt-2">
-    <MdEmail className="text-[#38B6FF] text-lg" />
-    www.nirobinfotech.com
-  </p>
-  <div className="flex space-x-4 mt-4">
+ <div className="flex space-x-4 mt-4">
   <a
     href="https://www.facebook.com/profile.php?id=61580539836179"
     className="p-2 bg-blue-600 rounded-full transition"

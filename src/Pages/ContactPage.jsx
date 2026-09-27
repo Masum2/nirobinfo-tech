@@ -25,27 +25,27 @@ const ContactPage = () => {
           <div className="space-y-6">
             <div className="flex items-start gap-4">
               <FaMapMarkerAlt className="w-6 h-6 text-blue-400" />
-              <div>
+              <div >
                 <h4 className="font-semibold">Office Address</h4>
                 <p className="text-gray-400">
-                  F-18 Zakir Hossain Road, Lalmatia, Mohammadpur, Dhaka, Bangladesh
+                 Office Location : # 5/8 (1st Floor) , Block-B, Lalmatia, Mohammadpur, Dhaka-1207
                 </p>
               </div>
             </div>
 
             <div className="flex items-start gap-4">
               <FaPhoneAlt className="w-6 h-6 text-green-400" />
-              <div>
-                <h4 className="font-semibold">Phone</h4>
+              <div className="flex items-start gap-4">
+                <h4 className="font-semibold">Phone:</h4>
                 <p className="text-gray-400">+8801878437942</p>
               </div>
             </div>
 
             <div className="flex items-start gap-4">
               <FaEnvelope className="w-6 h-6 text-red-400" />
-              <div>
-                <h4 className="font-semibold">Email</h4>
-                <p className="text-gray-400">info@nirobinfotech.com</p>
+              <div className="flex items-start gap-4">
+                <h4 className="font-semibold">Email:</h4>
+                <p className="text-gray-400"> nirobinfotechltd@gmail.com</p>
               </div>
             </div>
           </div>
